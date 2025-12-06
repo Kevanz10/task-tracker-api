@@ -24,6 +24,9 @@ jobs:
         env:
           RAILS_ENV: test
 
+      - name: Run rubocop
+        run: bundle exec rubocop
+
       - name: Run tests
         run: bundle exec rspec
 
